@@ -3,6 +3,7 @@ import numpy as np
 from time import process_time_ns
 from traceback import print_tb
 
+'''
 n1 = np.array([10,10,20,30])
 print(type(n1))
 print(n1)
@@ -142,4 +143,65 @@ col_r1 = v[:, 1]
 col_r2 = v[:, 1:2]
 print(col_r1, col_r1.shape)
 print(col_r2, col_r2.shape)
+'''
 
+
+# 5/08/2022  Lab-11
+
+# Array Math
+x = np.array([[1,2], [3,4]], dtype=np.float64)
+y = np.array([[5,6], [7,8]], dtype=np.float64)
+
+print(x+y)
+print(np.add(x,y))
+
+print("\n")
+
+print(x-y)
+print(np.subtract(x,y))
+
+print("\n")
+
+print(x*y)
+print(np.multiply(x,y))
+
+print("\n")
+
+print(x/y)
+print(np.divide(x,y))
+
+print("\n")
+
+print(np.sqrt(x))
+
+print("\n")
+
+# dot function
+v = np.array([9, 10])
+w = np.array([11, 12])
+
+print(v.dot(w))     # it will perform dot(.) operation
+print(np.dot(v,w))
+
+# transpose function
+
+x = np.array([[1,2], [3,4]], dtype=np.float64)
+y = np.array([[5,6], [7,8]], dtype=np.float64)
+
+print(x)
+print(x.T)
+
+print("\n")
+print(np.linspace(0,10,12))
+print(np.arange(0,100,5))
+
+print("\n")
+f = np.array([1,2,3,4,5,7])
+print(np.mean(f))
+print(np.median(f))
+print(np.std(f))
+
+print("\n")
+# Numpy Exopnentiation
+A = np.arange(1,10)
+print(A**2)
